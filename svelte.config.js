@@ -1,6 +1,8 @@
 import adapter from 'svelte-adapter-github';
 import preprocess from 'svelte-preprocess';
 
+const dev = process.env.NODE_ENV === 'development';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
@@ -8,10 +10,18 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+            pages: 'docs',
+            assets: 'docs',
+            fallback: null,
+            precompress: false,
+            domain: null,
+            jekyll: false
+        }),
         paths: {
             base: dev ? '' : '/dani'
         },
+        trailingSlash: 'always'
         // appDir: 'internal'
 	}
 };
