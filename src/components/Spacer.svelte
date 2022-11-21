@@ -1,0 +1,1 @@
+<div class="min-w-full min-h-[calc(100vh/2)]"></div>
