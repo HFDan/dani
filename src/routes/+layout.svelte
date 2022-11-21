@@ -73,7 +73,7 @@
 					area: 2000
 				},
 				limit: 0,
-				value: 150
+				value: 50
 			},
 			opacity: {
 				animation: {
@@ -105,6 +105,9 @@
 		const particlesContainer = event.detail.particles;
 	};
 	let particlesInit = async (main) => {
+        if (window.matchMedia("(min-width: 1024px)").matches) {
+            particlesConfig.particles.number.value = 150
+        }
 		await loadFull(main);
 	};
 </script>
@@ -118,7 +121,7 @@
 <header />
 <slot />
 <footer
-	class="bg-accent font-['JetBrains_Mono'] text-center text-xl text-text-primary py-5 grid gap-4 grid-cols-3 grid-rows-1">
-	<div><a href="https://github.com/HFDan"> <Icon icon={faGithub}></Icon> </a></div>
-	<div>Made with ❤️ for Open Source and Programming</div>
+	class="bg-accent font-['JetBrains_Mono'] text-xs lg:text-xl text-text-primary py-5 grid gap-4 grid-cols-3 grid-rows-1 items-center">
+	<div><a href="https://github.com/HFDan" class="ml-10 inline-block self-start"><Icon class="text-[2em]" icon={faGithub}></Icon></a></div>
+	<div class="text-center">Made with ❤️ for Open Source and Programming</div>
 </footer>
