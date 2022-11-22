@@ -21,7 +21,7 @@ const config = {
             jekyll: false
         }),
         paths: {
-            base: dev ? '' : '/dani'
+            base: dev ? '' : '/HFDan'
         },
         trailingSlash: 'always'
         // appDir: 'internal'
