@@ -1,3 +1,7 @@
-# dani
+# Kid's name Dani
 
-![lmao](https://media.discordapp.net/attachments/941652733503631360/1017048489793961994/lmao.gif)
+* I write code, i guess
+* Me likey asm & low level programming
+* way too depressed to merge pull requests
+* me sleepy
+* did i mention me sleepy?
