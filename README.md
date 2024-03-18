@@ -6,3 +6,4 @@
 * me sleepy
 * did i mention me sleepy?
 * i like ricing my linux desktop every now and then
+* one of these days i'll become a vtuber or smth and never worry again, for now i'm just addicted to monster
